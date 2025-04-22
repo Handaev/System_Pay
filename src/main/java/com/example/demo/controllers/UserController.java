@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/home")
 public class UserController {
 
-    private Repositories repositories;
+    private final Repositories repositories;
 
     public UserController(Repositories repositories){
         this.repositories = repositories;

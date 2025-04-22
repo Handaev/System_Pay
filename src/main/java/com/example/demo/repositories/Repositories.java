@@ -13,13 +13,9 @@ public class Repositories {
 
     private final SessionFactory sessionFactory;
 
-
-    @Autowired
     public Repositories(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-
-
 
     public void save(){
         Card card = new Card();
